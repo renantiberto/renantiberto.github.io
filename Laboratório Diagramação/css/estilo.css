@@ -1,0 +1,182 @@
+body, input, textarea, select{
+    font-family:Verdana, Geneva, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .heading{
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+    margin:0;
+}
+
+
+header {
+    background-color:rgb(26, 59, 58);
+    padding:20px 0;
+}
+
+header h1 {
+    margin:0;
+    color:#fff;
+    font-weight:normal;
+    display:inline;
+    float:left;
+    font-size: 1.2em;
+}
+header nav {
+    float:right;
+}
+
+header ul {
+    list-style:none;
+    margin:10px 0 0 0;
+}
+header li {
+    float:left;
+    margin-right: 25px;
+}
+
+header a {
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* end of header */
+
+#banner {
+    background: rgb(18, 18, 18) url(../demo/backgrounds/01.png);
+    height:300px;
+    color:#fff;
+    padding: 150px 0;
+}
+
+#banner h2 {
+    margin:0;
+    font-size: 3em;
+    font-weight: normal;
+    
+}
+
+#banner p, #banner h2 {
+    width:550px;
+    
+}
+
+#banner p{
+    margin:50px 0;
+}
+#banner a {
+    background-color: rgb(74, 149, 11);
+    color: #fff;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-size:0.8em;
+}
+
+#banner a:hover {
+    border:1px solid #fff;
+    background-color:rgba(74, 149, 11, 0);
+}
+
+/* classes */
+.row {
+    padding:60px 0;
+}
+.row::after{
+    content:'';
+    display: block;
+    height: 0;
+    clear: both;
+    font-size: 0;
+    visibility: hidden;
+}
+
+.wrapper{
+    width:1000px;
+    margin:auto;
+}
+
+.active {
+    color:rgb(74, 149, 11);
+}
+
+.gray{
+    background-color:rgb(229, 229, 229);
+}
+
+.box, .box-4 {
+    float:left;
+    width:30%;
+}
+
+.box, .box-4 {
+    box-sizing:border-box;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+.box h3 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.box p {
+    font-size: 0.8em;
+}
+.box-4 {
+    padding:30px 0;
+}
+.box-4 a {
+    border:rgb(229, 229, 229) solid 1px;
+    padding:10px 12px;
+    font-size:1.1em;
+    color: rgb(74, 149, 11)
+}
+
+.box-4 a:hover {
+    background-color: rgb(17, 35, 34);
+    color: #fff; 
+}
+
+.box-4 h6 {
+    display:inline;
+    margin-left:15px;
+    font-size:1em;
+    font-weight: normal;
+}
+
+.box-4  p, .box-4 p + a {
+    margin-left: 65px;
+    font-size:0.8em;
+    text-decoration: none;
+}
+
+.box-4 p + a {
+    border:none;
+}
+.box-4 p + a:hover {
+    background-color:#fff;
+    color: rgb(74, 149, 11);
+}
+.img-background {
+    background: #fff url(../demo/backgrounds/01.png) repeat-y left top;
+    padding:0;
+}
+
+.box-2 {
+    background-color: #fff;
+    width: 50%;
+    float: right;
+    padding-right:150px;
+}
+/* end of classes */
+
+footer section {
+    background-color: rgb(17, 35, 34);
+}
+
+.creditos {
+    background-color: rgb(26, 59, 58);
+}
