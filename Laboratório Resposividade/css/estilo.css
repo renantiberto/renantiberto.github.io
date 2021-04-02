@@ -1,21 +1,24 @@
 body {
-    background-color:#333;
+    background-color:rgb(180, 180, 180);
     margin:0;
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 header {
-    background-color:#ddd;
+    background-color:rgb(255, 255, 255);
     padding: 0;
 }
 
 header h1 {
+    text-transform: uppercase;
     text-align: center;
+    color:teal;
 }
 
 header nav {
-    background-color:#999;
+    background-color:rgb(143, 197, 193);
     padding: 5px;
+    width: auto;
 }
 
 header ul {
@@ -26,26 +29,106 @@ header ul {
 }
 
 header li {
-    flex-grow:1;
+    flex-grow: 1;
+    text-align: center;
 }
 
 header a {
     text-decoration: none;
-    color: #333;
+    color: rgb(255, 255, 255);
     padding: 5px;
 }
 
 header a:hover {
-    
-    background-color: #ddd;
+    background-color: rgb(195, 233, 221);
 }
 
 main {
     background-color: #eee;
 }
 
+.slider {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 20%;
+    margin-top: 5%;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: rgb(143, 197, 193);
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label{
+    left: 20px;
+}
+
+.slider li:nth-child(2) label{
+    left: 50px;
+}
+
+.slider li:nth-child(3) label{
+    left: 80px;
+}
+
+.slider img {
+    opacity: 1;
+    visibility: hidden;
+    animation:ease-in-out;
+}
+
+.slider li input:checked ~ figcaption {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: top;
+}
+
 .carousel {
+    display: block;
     width:100%;
+    margin: auto;
     position:relative;
     padding:0;
 }
@@ -53,27 +136,29 @@ main {
 .carousel ul {
     list-style: none;
     margin: 0;
-    padding:0;
-    height: 300px;
+    padding: 0;
+    height: 330px;
 }
 .carousel img{
     width:100%;
-    max-height:300px;
+    max-height:305px;
 }
 .carousel li {
     width:100%;
     float:left;
 }
+
 .carousel figure {
     position:relative;
 }
+
 .carousel figcaption {
     position:absolute;
     top: 0px;
     width:100%;
-    padding:5px;
-    background-color: rgb(0, 0, 0, 0.3);
-    color:#fff;
+    padding:10px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(75, 163, 167);
     text-align: center;
     box-sizing: border-box;
 }
@@ -99,46 +184,18 @@ main {
     float:right;
 }
 
-.carousel-bullets {
-    position:absolute;
-    top: 280px;
-    width: 100px;
-    left: 50px;
-    
-}
-
-.carousel-bullets ul {
-    display:flex;
-    list-style-type:none;
-    padding:0
-}
-
-.carousel-bullets a {
-    width:30px;
-    height:30px;
-    padding: 5px 10px;
-    background-color: #aaa;
-    border: 1px solid #777;
-    border-radius: 50%;
-}
-
-.carousel-bullets a:hover{
-    background-color: #777;
-    color: #fff;
-}
-
-
 .box, .box-2 {
-    border:5px solid rgb(0, 77, 64);
+    border:5px solid rgb(143, 197, 193);
     background-color: #ddd;
 }
 
 .box button {
-    background-color:rgb(83, 172, 145);
+    background-color:rgb(143, 197, 193);
     color: #fff;
     border:1px solid rgb(189, 189, 230);
-    border-radius: 5px;
+    border-radius: 10px;
     float: right;
+    cursor: pointer;
 }
 
 footer p {
@@ -148,8 +205,36 @@ footer p {
 }
 
 footer a {
-    color:#fff;
+    color:rgb(255, 255, 255);
     text-decoration: none;
+}
+
+footer i {
+    color: rgb(49, 122, 118);
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 230px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(102, 102, 102);
+    text-decoration: none;
+}
+.btn::after {
+    content: "↑";
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top: -8px;
 }
 
 /*celular 
@@ -160,9 +245,9 @@ footer a {
 }
 
 /*tablet*/
-@media (min-width: 768px) and (max-width:991px) { 
+@media (min-width: 768px) and (max-width:991px) {
     body {
-        background-color:chocolate;
+        background-color:rgb(42, 105, 84);
     }
     .row {
         width: 733px;
@@ -275,7 +360,7 @@ footer a {
     footer ul {
         padding:0;
         list-style: none;
-        display:flex;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
