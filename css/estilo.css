@@ -45,9 +45,7 @@
     line-height: 100px;
 }
 
-.menu a:hover,
-.show-menu-btn:hover,
-.hide-menu-btn:hover {
+.menu a:hover, .show-menu-btn:hover, .hide-menu-btn:hover {
     color: #3498db;
 }
 
