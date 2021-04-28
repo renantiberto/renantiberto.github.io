@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "montserrat", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .header {
@@ -60,6 +60,10 @@
 .accordion {
     padding: 0 30px;
     margin-bottom: 30px;
+}
+
+.accordion p {
+    text-align: justify;
 }
 
 .accordion-body a{
