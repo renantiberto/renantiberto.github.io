@@ -12,7 +12,7 @@ body {
 .header {
     height: 100px;
     background: linear-gradient(to left, #3498db, #acd3ee);
-    padding: 0 40px;
+    padding: 0 20px;
     color: #fff;
 }
 
