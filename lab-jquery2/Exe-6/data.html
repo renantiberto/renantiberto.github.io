@@ -30,7 +30,7 @@
                     let data1 = new Date(ano,mes - 1,dia);
                     const diff = Math.abs(data1.getTime() - hoje.getTime());
                     const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
-                    $("#resultado").text("Você tem " + days + " dias de vida!");        
+                    $("#resultado").text(days +" dias");        
                 }
             })
 
@@ -51,7 +51,7 @@
         <div>
             <label>Data de Nascimento:</label>
             <input type="date" id="entrada" placeholder="Informe a data: dd/mm/aaa"><br>
-            <p id="resultado"></p>
+            <p>Sua idade em dias é: <span id="resultado"></span></p>
             <button id="botao" class="btn btn-primary">Executar</button>
         </div>
     </section>
