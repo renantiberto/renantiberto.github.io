@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <title>LabJQuery - Exe9</title>
+
+    <style>
+        #fraca {
+            color: #d90429;
+        }
+        #moderada {
+            color: #f77f00;
+        }
+        #forte {
+            color: #52b69a;
+        }
+    </style>
+
+    <script>
+        $(function(){
+            $("#entrada").keyup(function(){
+                const rmin = /[a-z]/;
+                const rmai = /[A-Z]/;
+                const rnum = /[1-9]/;
+                const rchar_especiais = /[@#!$%&*()-+.,=]/;
+                
+                if($("#entrada").val() == ''){
+                    $("#resultado").text("");
+                }
+                
+                if(rmin.test($("#entrada").val()) || rmai.test($("#entrada").val())){
+                    $("#resultado").text("Senha fraca");
+                    $("#resultado").css("color", "red");
+                    $("#resultado").css("font-weight" , "bolder");
+                }
+                
+                if(rmin.test($("#entrada").val()) && rmai.test($("#entrada").val()) && rnum.test($("#entrada").val())){
+                    $("#resultado").text("Senha moderada");
+                    $("#resultado").css("color", "orange");
+                    $("#resultado").css("font-weight" , "bolder");
+                }
+                
+                if(rmin.test($("#entrada").val()) && rmai.test($("#entrada").val()) && rnum.test($("#entrada").val()) && rchar_especiais.test($("#entrada").val())){
+                    $("#resultado").text("Senha forte");
+                    $("#resultado").css("color", "green");
+                    $("#resultado").css("font-weight" , "bolder");
+                }
+            })
+
+            $("#olho").on('click', function(){
+                let tipe = $("#entrada").attr("type");
+                console.log(tipe);
+                if(tipe == "password")
+                {
+                    $("#entrada").prop('type',"text");
+                    $(this).text("Ocultar");
+                }
+                else
+                {
+                    $("#entrada").prop("type", "password");
+                    $(this).text("Mostrar");
+                }
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+    <section>
+    
+        <h1>Quer conferir sua Senha?</h1> 
+        <div>
+            <label>Veja se ela é <strong id="fraca">fraca</strong> , <strong id="moderada">moderada</strong> ou <strong id="forte">forte</strong>.</label><br><br>
+            <input type="password" maxlength="8" id="entrada" placeholder="Digite uma senha:">
+                
+            <button id="olho" class="btn btn-info">Mostrar</button>
+            <div id="resultado"></div><br>
+        </div>
+    
+    </section>
+
+</body>
+</html>
