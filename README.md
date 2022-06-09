@@ -1,5 +1,5 @@
 # renantiberto.github.io
-Repositório reservado para disciplina de Fundamentos da Web
+Repositório reservado para apresentação do meu portifólio. (em desenvolvimento)
 
 ```
 Criado por Renan Tiberto
