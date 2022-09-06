@@ -7,94 +7,60 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/85bcc2cf76.js" crossorigin="anonymous"></script>
 
     <title>Renan Tiberto - Portifólio</title>
 </head>
 <body>
-    <main>
+    <div class="container">
         <!-- Header -->
         <header>
-            <div class="logo">
-                PORTIFÓLIO
-            </div>
-            <div class="menu">
-                <nav class="nav-list">
-                    <a href="#home">Home</a>
-                    <a href="#home">Projetos</a>
-                    <a href="#home">Contato</a>
-                </nav>
-            </div>
+            <img class="image" src="./assets/images/profile-pic.png" alt="Imagem de Perfil">
         </header>
+        <!-- Main -->
+        <main>
+            <section class="title">
+                <h1 class="title__name">Renan Tiberto</h1>
+                <p class="subtitle">@renantiberto</p>
+            </section>
 
-        <!-- Home -->
-        <section id="home">
-            <div class="home-info">
-                <h2>Olá, sou o Renan</h2>
-                <span class="home-position">Desenvolvedor Front-End</span>
-                <span class="home-resume">
-                    Graduando em Sistemas de Informação, sou apaixonado por tecnologia e também pela música. Trilhando uma carreira de desenvolvedor em processo com cerca de 1 ano de experiência.
-                </span>
-
-                <div class="buttons">
-                    <button class="contact">
-                        <a href="mailto:renan.tiberto@gmail.com" target="_blank">Contate-me</a>
-                    </button>
-                    <button class="curriculum">
-                        <a href="./assets/docs/curriculo.pdf">Download CV</a>
-                    </button>
-                </div>
-            </div>
-            <div class="home-image">
-                <img src="./assets/images/profile.jpeg" alt="Foto de Perfil">
-            </div>
-        </section>
-
-        <section id="social">
-            <ul class="social-wrapper">
-                <li><a
-                        href="https://www.linkedin.com/in/renan-tiberto/"
-                        target="_blank"
-                        title="LinkedIn"
-                    >
-                        <img src="./assets/images/icons/linkedin.png" alt="LinkedIn">
-                    </a>
-                </li>
-                <li><a
-                    href="https://github.com/renantiberto" 
+            <section class="links">
+                <a href="https://www.linkedin.com/in/renan-tiberto/"
+                    class="btn btn__linkedin"
                     target="_blank" 
-                    title="Github"
-                    >
-                        <img src="./assets/images/icons/github.png" alt="Github">
-                    </a>
-                </li>
-                <li><a
-                        href="https://www.facebook.com/renan.tiberto"
-                        target="_blank"
-                        title="Facebook"
-                    >
-                        <img src="./assets/images/icons/facebook.png" alt="Facebook">
-                    </a>
-                </li>
-                <li><a
-                        href="https://www.instagram.com/renantiberto/"
-                        target="_blank"
-                        title="Instagram"
-                    >
-                        <img src="./assets/images/icons/instagram.png" alt="Instagram">
-                    </a>
-                </li>
-            </ul>
-         </section>
+                    title="LinkedIn">
+                    LinkedIn <img class="btn__icon" src="./assets/images/icons/linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+                <a href="https://github.com/renantiberto/"
+                    class="btn btn__github"
+                    target="_blank" 
+                    title="GitHub">
+                    <span>GitHub</span>
+                    <img class="btn__icon" src="./assets/images/icons/github.png" alt="Ícone do Githun">
+                </a>
+                <a href="https://www.instagram.com/renantiberto/" 
+                    class="btn btn__instagram"
+                    target="_blank"
+                    title="Instagram">
+                    <span>Instagram</span>
+                    <img class="btn__icon" src="./assets/images/icons/instagram.png" alt="Ícone do Instagram">
+                </a>
+                <a href="https://www.facebook.com/renan.tiberto"
+                    class="btn btn__facebook"
+                    target="_blank"
+                    title="Facebook">
+                    <span>Facebook</span> 
+                    <img class="btn__icon" src="./assets/images/icons/facebook.png" alt="Ícone do Facebook">
+                </a>
+            </section>
+        </main>
 
-        <!-- Footer -->
-        <footer>
-            Feito com ❤ Renan Tiberto<br>
-            Todos os direitos reservados.
+        <footer class="footer">
+            <span>© 2022 Renan Tiberto All rights reserved</span>
         </footer>
-    </main>
+    </div>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/scripts/main.js"></script>
