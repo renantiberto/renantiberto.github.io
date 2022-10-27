@@ -161,19 +161,23 @@ main {
     width: 400px;
     height: 60px;
     border: none;
-    border-radius: 15px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-decoration: none;
     color: var(--branco);
     transition: .2s ease-in-out;
     font-size: 1rem;
 }
 
+.links .btn span {
+    width: 80px;
+    text-align: center;
+}
+
 .links .btn img {
     width: 25px;
-    margin-left: 10px;
 }
 
 .links .btn.btn__linkedin {
@@ -187,6 +191,9 @@ main {
 }
 .links .btn.btn__facebook {
     background: linear-gradient(135deg, #1f4cc7 0%, #002cbd 100%);
+}
+.links .btn.btn__twitter {
+    background: linear-gradient(135deg, #1066e7 0%, #77c6eb 100%);
 }
 .links .btn:hover {
     opacity: 0.9;
