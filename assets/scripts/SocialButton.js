@@ -23,10 +23,35 @@ class SocialButton extends HTMLElement {
   }
 
   createLinks() {
-    const createLink = () => {
+    const listLinks = {
+      LinkedIn: {
+        title: 'LinkedIn',
+        href: 'http://'
+      },
+      Facebook: {
+        title: 'Facebook',
+        href: 'http://'
+      },
+      Github: {
+        title: 'Github',
+        href: 'http://'
+      },
+      Instagram: {
+        title: 'Instagram',
+        href: 'http://'
+      },
+      Twitter: {
+        title: 'Twitter',
+        href: 'http://'
+      }
+    }
+
+    const createLink = (href, title) => {
       const link = document.createElement('a');
       link.classList.add('btn');
-      link.setAttribute('href', '');
+      link.setAttribute('href', '#');
+      link.setAttribute('title', '#');
+      link.setAttribute('target', '_blank');
       return link;
     }
 
@@ -36,10 +61,6 @@ class SocialButton extends HTMLElement {
   styles() {
     const style = document.createElement('style');
     style.textContent = `
-      .social-btn {
-
-      }
-
       .links {
         display: flex;
         flex-direction: column;
