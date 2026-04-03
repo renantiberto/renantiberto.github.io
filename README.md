@@ -1,67 +1,65 @@
-# Renan Tiberto - Linktree
+# 🔗 Linktree — Renan Tiberto
 
-<!-- Adicione aqui uma captura de tela do projeto -->
-![Screenshot do Projeto](assets/images/screenshots/screenshot.png)
+Página pessoal de links construída com **Next.js 15**, **Tailwind CSS v4** e **Phosphor Icons**, com suporte a tema claro/escuro.
 
-## 📋 Descrição
-
-Este é o repositório do meu site pessoal de links, uma página web simples e elegante que centraliza todos os meus links profissionais e redes sociais em um único local. O projeto serve como uma landing page digital para facilitar o acesso aos meus perfis online.
-
-## ✨ Funcionalidades
-
-- **Design Responsivo**: Adaptável para diferentes tamanhos de tela
-- **Tema Claro/Escuro**: Alternância entre modos de visualização
-- **Links Centralizados**: Acesso rápido ao LinkedIn, GitHub, Instagram e currículo
-- **Interface Moderna**: Design limpo e profissional
-- **Performance Otimizada**: Carregamento rápido e eficiente
-
-## 🛠️ Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- Google Fonts (Ubuntu)
-- Font Awesome Icons
-
-## 🚀 Como Executar
-
-Acesse diretamente: [renantiberto.github.io](https://renantiberto.github.io)
-
-## 📁 Estrutura do Projeto
-
-```
-renantiberto.github.io/
-├── assets/
-│   ├── images/
-│   │   ├── profile/
-│   │   │   ├── profile-pic.png
-│   │   │   └── profile.jpeg
-│   │   ├── icons/
-│   │   │   ├── linkedin.png
-│   │   │   ├── github.png
-│   │   │   ├── instagram.png
-│   │   │   ├── facebook.png
-│   │   │   ├── twitter.png
-│   │   │   └── docs_cv.png
-│   │   └── screenshots/
-│   │       └── screenshot.png
-│   ├── docs/
-│   │   └── resume/
-│   │       └── curriculo.pdf
-│   ├── scripts/
-│   │   └── main.js
-│   └── styles/
-│       └── main.css
-├── index.html
-└── README.md
-```
-
-## 👤 Autor
-
-**Renan Tiberto**
-
-- GitHub: [@renantiberto](https://github.com/renantiberto/)
+> Projeto originalmente desenvolvido em HTML/CSS puro e migrado para Next.js como exercício de aprendizado.
 
 ---
 
-© 2025 Renan Tiberto. Todos os direitos reservados.
+## ✨ Funcionalidades
+
+- 🌙 Tema claro/escuro com persistência via `localStorage`
+- ⚡ Dados de perfil e links centralizados em um único arquivo TypeScript
+- 🎨 Ícones via Phosphor Icons
+- 📱 Layout responsivo
+- 🔤 Tipografia customizada com `next/font` (Ubuntu + Ubuntu Mono)
+
+---
+
+## 🛠️ Tecnologias
+
+| Tecnologia | Versão | Uso |
+|---|---|---|
+| [Next.js](https://nextjs.org/) | 15 | Framework React com App Router |
+| [Tailwind CSS](https://tailwindcss.com/) | 4 | Estilização utilitária |
+| [Phosphor Icons](https://phosphoricons.com/) | latest | Ícones dos links |
+| [next-themes](https://github.com/pacocoursey/next-themes) | latest | Gerenciamento de tema claro/escuro |
+| TypeScript | 5 | Tipagem estática |
+
+---
+
+## 📁 Estrutura do projeto
+
+```
+src/
+├── app/
+│   ├── globals.css       # Configuração base do Tailwind + dark mode
+│   ├── layout.tsx        # Layout raiz com fontes e ThemeProvider
+│   └── page.tsx          # Página principal
+├── components/
+│   ├── LinkButton.tsx    # Botão de link com ícone Phosphor
+│   └── ThemeToggle.tsx   # Botão de alternância de tema
+├── data/
+│   └── profile.ts        # ⚙️ Dados dinâmicos (nome, links, avatar)
+└── types/
+    └── index.ts          # Tipagem TypeScript
+```
+
+---
+
+## 📜 Histórico de migração
+
+| Antes | Depois |
+|---|---|
+| HTML estático | Next.js 15 App Router |
+| CSS puro com variáveis | Tailwind CSS v4 |
+| `data-theme` + JS vanilla | `next-themes` + classe `.dark` |
+| Imagens PNG como ícones | Phosphor Icons |
+| Links hardcoded no HTML | `src/data/profile.ts` tipado |
+| `document.getElementById` para o ano | `new Date()` em Server Component |
+
+---
+
+## 📄 Licença
+
+MIT © [Renan Tiberto](https://github.com/renantiberto)
