@@ -1,67 +1,36 @@
-# Renan Tiberto - Linktree
+# Renan Tiberto — Portfólio
 
-<!-- Adicione aqui uma captura de tela do projeto -->
-![Screenshot do Projeto](assets/images/screenshots/screenshot.png)
+![Página de perfil de Renan Tiberto](design/screenshot.png)
 
 ## 📋 Descrição
 
-Este é o repositório do meu site pessoal de links, uma página web simples e elegante que centraliza todos os meus links profissionais e redes sociais em um único local. O projeto serve como uma landing page digital para facilitar o acesso aos meus perfis online.
+Página de apresentação pessoal: foto, cargo, redes sociais, tecnologias
+com que trabalho, um texto curto sobre mim e acesso direto ao contato
+por e-mail e ao currículo.
 
 ## ✨ Funcionalidades
 
-- **Design Responsivo**: Adaptável para diferentes tamanhos de tela
-- **Tema Claro/Escuro**: Alternância entre modos de visualização
-- **Links Centralizados**: Acesso rápido ao LinkedIn, GitHub, Instagram e currículo
-- **Interface Moderna**: Design limpo e profissional
-- **Performance Otimizada**: Carregamento rápido e eficiente
+- **Responsiva**: testada em 360px, 768px e 1280px, sem rolagem horizontal
+- **Seletor Contato / Currículo**: uma pílula desliza até o botão com hover ou foco do teclado
+- **Animações de entrada**: cada elemento entra em sequência, e tudo fica parado para quem ativa "reduzir movimento" no sistema
+- **Acessível**: navegação completa por teclado, foco visível e textos alternativos
+- **Design system**: cores, fontes, raios e espaçamentos vêm só dos tokens
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
 - HTML5
-- CSS3
-- JavaScript
-- Google Fonts (Ubuntu)
-- Font Awesome Icons
-
-## 🚀 Como Executar
-
-Acesse diretamente: [renantiberto.github.io](https://renantiberto.github.io)
-
-## 📁 Estrutura do Projeto
-
-```
-renantiberto.github.io/
-├── assets/
-│   ├── images/
-│   │   ├── profile/
-│   │   │   ├── profile-pic.png
-│   │   │   └── profile.jpeg
-│   │   ├── icons/
-│   │   │   ├── linkedin.png
-│   │   │   ├── github.png
-│   │   │   ├── instagram.png
-│   │   │   ├── facebook.png
-│   │   │   ├── twitter.png
-│   │   │   └── docs_cv.png
-│   │   └── screenshots/
-│   │       └── screenshot.png
-│   ├── docs/
-│   │   └── resume/
-│   │       └── curriculo.pdf
-│   ├── scripts/
-│   │   └── main.js
-│   └── styles/
-│       └── main.css
-├── index.html
-└── README.md
-```
+- CSS3 (variáveis CSS, sem framework)
+- JavaScript puro
+- Google Fonts (Inter)
+- Font Awesome
 
 ## 👤 Autor
 
 **Renan Tiberto**
 
 - GitHub: [@renantiberto](https://github.com/renantiberto/)
+- LinkedIn: [renan-tiberto](https://www.linkedin.com/in/renan-tiberto/)
 
 ---
 
-© 2025 Renan Tiberto. Todos os direitos reservados.
+© 2026 Renan Tiberto. Todos os direitos reservados.

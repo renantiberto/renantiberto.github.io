@@ -3,295 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Renan Tiberto — Desenvolvedor Front-end. Portfólio de projetos e experiências.">
-    <link rel="stylesheet" href="./assets/styles/main.css">
+    <meta name="description" content="Renan Tiberto, desenvolvedor front-end. Interfaces rápidas, acessíveis e bem acabadas.">
+    <title>Renan Tiberto — Desenvolvedor Front-end</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/85bcc2cf76.js" crossorigin="anonymous"></script>
-    <title>Renan Tiberto — Desenvolvedor Front-end</title>
+
+    <link rel="stylesheet" href="./assets/styles/tokens.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-inner">
-            <a href="#inicio" class="nav-logo">
-                <span class="nav-dot">•</span> Renan Tiberto
-            </a>
-            <button class="nav-menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
-                MENU <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+    <main class="profile">
 
-    <!-- Menu Overlay -->
-    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
-        <button class="overlay-close" id="menuClose" aria-label="Fechar menu">
-            <i class="fas fa-times"></i>
-        </button>
-        <nav class="overlay-nav">
-            <ul>
-                <li><a href="#sobre"    class="overlay-link">Sobre</a></li>
-                <li><a href="#stack"    class="overlay-link">Stack</a></li>
-                <li><a href="#projetos" class="overlay-link">Projetos</a></li>
-                <li><a href="#contato"  class="overlay-link">Contato</a></li>
+        <!-- Identidade -->
+        <header class="profile-head">
+            <figure class="avatar in in--scale" style="--i:0">
+                <img src="./assets/images/profile/perfil.png" alt="Foto de Renan Tiberto sorrindo, de camiseta preta" width="1086" height="1448">
+            </figure>
+
+            <h1 class="profile-name in in--mask" style="--i:1">Renan Tiberto</h1>
+            <p class="profile-role in in--rise" style="--i:2">Desenvolvedor Front-end</p>
+
+            <ul class="socials" aria-label="Redes sociais">
+                <li class="in in--scale" style="--i:3">
+                    <a href="https://github.com/renantiberto/" target="_blank" rel="noopener" aria-label="GitHub (abre em nova aba)">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="in in--scale" style="--i:4">
+                    <a href="https://www.linkedin.com/in/renan-tiberto/" target="_blank" rel="noopener" aria-label="LinkedIn (abre em nova aba)">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="in in--scale" style="--i:5">
+                    <a href="https://www.instagram.com/renantiberto/" target="_blank" rel="noopener" aria-label="Instagram (abre em nova aba)">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="in in--scale" style="--i:6">
+                    <a href="mailto:renan.tiberto@gmail.com" aria-label="Enviar e-mail">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </li>
             </ul>
-            <div class="overlay-bottom">
-                <a href="https://renantiberto.github.io/curriculo-web/" target="_blank" class="overlay-cv">Ver Currículo →</a>
-                <div class="overlay-socials">
-                    <a href="https://github.com/renantiberto/" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/renan-tiberto/" target="_blank">LinkedIn</a>
-                    <a href="https://www.instagram.com/renantiberto/" target="_blank">Instagram</a>
-                </div>
-            </div>
-        </nav>
-    </div>
 
-    <!-- Hero -->
-    <section class="hero" id="inicio">
-        <div class="hero-content" data-reveal>
-            <p class="hero-greeting">Hey, eu sou</p>
-            <h1 class="hero-name">Renan<br>Tiberto</h1>
-            <h2 class="hero-role">Desenvolvedor<br>Front-end</h2>
-            <p class="hero-description">
-                Transformando ideias em interfaces bonitas,
-                rápidas e acessíveis.
+            <ul class="tags" aria-label="Tecnologias">
+                <li class="in in--rise" style="--i:6">#HTML</li>
+                <li class="in in--rise" style="--i:7">#CSS</li>
+                <li class="in in--rise" style="--i:8">#JavaScript</li>
+                <li class="in in--rise" style="--i:9">#TypeScript</li>
+                <li class="in in--rise" style="--i:10">#React</li>
+                <li class="in in--rise" style="--i:11">#Node.js</li>
+                <li class="in in--rise" style="--i:12">#Git</li>
+                <li class="in in--rise" style="--i:13">#Figma</li>
+                <li class="in in--rise" style="--i:14">#UI/UX</li>
+            </ul>
+        </header>
+
+        <!-- Sobre -->
+        <section class="about" aria-labelledby="sobre-titulo">
+            <h2 id="sobre-titulo" class="about-title in in--mask" style="--i:12">Sobre mim</h2>
+            <p class="in in--rise" style="--i:13">
+                Sou desenvolvedor front-end e crio interfaces que unem estética
+                e funcionalidade. Acredito que bom código e bom design caminham
+                lado a lado.
             </p>
-            <a href="#contato" class="btn-primary">Entrar em Contato →</a>
-        </div>
-        <div class="hero-visual" data-reveal data-reveal-delay="100">
-            <div class="hero-photo-wrapper">
-                <img src="./assets/images/profile/perfil.png" alt="Renan Tiberto" class="hero-photo">
-            </div>
-        </div>
-        <div class="hero-stats" data-reveal data-reveal-delay="200">
-            <div class="stat">
-                <span class="stat-number">3+</span>
-                <span class="stat-label">Anos de<br>Experiência</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">10+</span>
-                <span class="stat-label">Projetos<br>Entregues</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">100%</span>
-                <span class="stat-label">Foco em<br>Qualidade</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Strip de Serviços -->
-    <div class="services-strip">
-        <div class="service-item" data-reveal>
-            <h4>INTERFACES MODERNAS</h4>
-            <p>Design focado no usuário com componentes reutilizáveis e elegantes.</p>
-        </div>
-        <div class="service-item" data-reveal data-reveal-delay="75">
-            <h4>CÓDIGO LIMPO</h4>
-            <p>Desenvolvimento seguindo boas práticas, performance e manutenibilidade.</p>
-        </div>
-        <div class="service-item" data-reveal data-reveal-delay="150">
-            <h4>DESIGN RESPONSIVO</h4>
-            <p>Layouts que funcionam perfeitamente em qualquer dispositivo.</p>
-        </div>
-        <div class="service-item" data-reveal data-reveal-delay="225">
-            <h4>UX &amp; PERFORMANCE</h4>
-            <p>Experiências rápidas, acessíveis e agradáveis para o usuário final.</p>
-        </div>
-    </div>
-
-    <!-- Ticker de Skills -->
-    <div class="ticker-wrapper">
-        <div class="ticker-track">
-            <span>HTML5</span><span class="dot">✦</span>
-            <span>CSS3</span><span class="dot">✦</span>
-            <span>JavaScript</span><span class="dot">✦</span>
-            <span>TypeScript</span><span class="dot">✦</span>
-            <span>React</span><span class="dot">✦</span>
-            <span>Node.js</span><span class="dot">✦</span>
-            <span>Git</span><span class="dot">✦</span>
-            <span>Figma</span><span class="dot">✦</span>
-            <span>Responsive Design</span><span class="dot">✦</span>
-            <span>UI/UX</span><span class="dot">✦</span>
-            <span>HTML5</span><span class="dot">✦</span>
-            <span>CSS3</span><span class="dot">✦</span>
-            <span>JavaScript</span><span class="dot">✦</span>
-            <span>TypeScript</span><span class="dot">✦</span>
-            <span>React</span><span class="dot">✦</span>
-            <span>Node.js</span><span class="dot">✦</span>
-            <span>Git</span><span class="dot">✦</span>
-            <span>Figma</span><span class="dot">✦</span>
-            <span>Responsive Design</span><span class="dot">✦</span>
-            <span>UI/UX</span><span class="dot">✦</span>
-        </div>
-    </div>
-
-    <!-- Sobre -->
-    <section class="section" id="sobre">
-        <div class="section-inner about-grid">
-            <div class="about-heading" data-reveal>
-                <span class="section-label">Sobre mim</span>
-                <h2 class="section-title">Construindo<br>com qualidade<br>e propósito</h2>
-            </div>
-            <div class="about-body" data-reveal data-reveal-delay="100">
-                <p>
-                    Sou um desenvolvedor front-end focado em criar interfaces que unem
-                    estética e funcionalidade. Acredito que bom código e bom design
-                    caminham lado a lado.
-                </p>
-                <p>
-                    Comprometido com boas práticas, performance e experiência do usuário.
-                    Sempre buscando aprender e evoluir com cada projeto.
-                </p>
-                <div class="about-links">
-                    <a href="https://renantiberto.github.io/curriculo-web/" target="_blank" class="btn-primary">Ver Currículo →</a>
-                    <a href="https://www.linkedin.com/in/renan-tiberto/" target="_blank" class="btn-outline">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stack -->
-    <section class="section section-alt" id="stack">
-        <div class="section-inner">
-            <div class="stack-header" data-reveal>
-                <span class="section-label">Tecnologias</span>
-                <h2 class="section-title">Stack &amp; Ferramentas</h2>
-            </div>
-            <div class="stack-grid">
-                <div class="stack-card" data-reveal>
-                    <i class="fab fa-html5"></i><span>HTML5</span>
-                </div>
-                <div class="stack-card" data-reveal data-reveal-delay="50">
-                    <i class="fab fa-css3-alt"></i><span>CSS3</span>
-                </div>
-                <div class="stack-card" data-reveal data-reveal-delay="100">
-                    <i class="fab fa-js-square"></i><span>JavaScript</span>
-                </div>
-                <div class="stack-card" data-reveal data-reveal-delay="150">
-                    <i class="fab fa-react"></i><span>React</span>
-                </div>
-                <div class="stack-card" data-reveal data-reveal-delay="200">
-                    <i class="fab fa-node-js"></i><span>Node.js</span>
-                </div>
-                <div class="stack-card" data-reveal data-reveal-delay="250">
-                    <i class="fab fa-git-alt"></i><span>Git</span>
-                </div>
-                <div class="stack-card" data-reveal data-reveal-delay="300">
-                    <i class="fab fa-github"></i><span>GitHub</span>
-                </div>
-                <div class="stack-card" data-reveal data-reveal-delay="350">
-                    <i class="fab fa-figma"></i><span>Figma</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projetos -->
-    <!-- <section class="section" id="projetos">
-        <div class="section-inner">
-            <div class="projects-header" data-reveal>
-                <div>
-                    <span class="section-label">Portfólio</span>
-                    <h2 class="section-title">Projetos Recentes</h2>
-                </div>
-                <p class="projects-subtext">Explore meus trabalhos e descubra como posso transformar sua ideia em realidade.</p>
-            </div>
-            <div class="projects-list">
-                <article class="project-card" data-reveal>
-                    <div class="project-img">
-                        <img src="./assets/images/screenshots/screenshot.png" alt="Currículo Web">
-                        <div class="project-overlay">
-                            <a href="https://renantiberto.github.io/curriculo-web/" target="_blank" class="project-overlay-link">Ver Projeto →</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <h3 class="project-title">Currículo Web</h3>
-                        <p class="project-desc">Currículo online responsivo e interativo, com design moderno e foco em usabilidade.</p>
-                        <div class="project-links">
-                            <a href="https://renantiberto.github.io/curriculo-web/" target="_blank">Demo →</a>
-                            <a href="https://github.com/renantiberto/" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card project-card--placeholder" data-reveal data-reveal-delay="100">
-                    <div class="project-img">
-                        <div class="project-placeholder">
-                            <i class="fas fa-code"></i>
-                            <span>Em breve</span>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/renantiberto/" target="_blank" class="project-overlay-link">Ver GitHub →</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">TypeScript</span>
-                            </div>
-                            <span class="project-year">2025</span>
-                        </div>
-                        <h3 class="project-title">Novo Projeto</h3>
-                        <p class="project-desc">Projeto em desenvolvimento. Acompanhe no GitHub para as próximas novidades.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/renantiberto/" target="_blank">GitHub →</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="projects-cta" data-reveal>
-                <a href="https://github.com/renantiberto/" target="_blank" class="btn-outline">Ver todos no GitHub →</a>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Contato -->
-    <section class="section-contact" id="contato">
-        <div class="section-inner contact-inner" data-reveal>
-            <span class="section-label section-label--light">Contato</span>
-            <h2 class="contact-title">Vamos trabalhar juntos?</h2>
-            <p class="contact-desc">
-                Estou disponível para projetos freelance, oportunidades de trabalho
-                ou apenas para conversar sobre tecnologia.
+            <p class="in in--rise" style="--i:14">
+                Trabalho com boas práticas, performance e experiência do usuário,
+                e cada projeto é uma chance de aprender algo novo.
             </p>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/renan-tiberto/" target="_blank" class="contact-card">
-                    <i class="fab fa-linkedin-in"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/renantiberto/" target="_blank" class="contact-card">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.instagram.com/renantiberto/" target="_blank" class="contact-card">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <span class="footer-logo"><span class="footer-dot">•</span> Renan Tiberto</span>
-            <span class="footer-copy">© <span id="currentYear"></span> Todos os direitos reservados.</span>
-            <div class="footer-socials">
-                <a href="https://github.com/renantiberto/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/renan-tiberto/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </footer>
+            <nav class="seg in in--clip" style="--i:16" aria-label="Contato e currículo" data-seg>
+                <a class="seg-item is-active" href="mailto:renan.tiberto@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i>Entre em contato</a>
+                <a class="seg-item" href="https://renantiberto.github.io/curriculo-web/" target="_blank" rel="noopener"><i class="fas fa-file-alt" aria-hidden="true"></i>Currículo<span class="sr-only"> (abre em nova aba)</span></a>
+            </nav>
+        </section>
+
+    </main>
 
     <script src="./assets/scripts/main.js"></script>
 </body>
